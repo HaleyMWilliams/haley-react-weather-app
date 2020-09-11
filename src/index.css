@@ -14,7 +14,6 @@ input {
   border-radius: 30px;
   background: #6b93c8;
   color: white;
-  opacity: 60%;
   margin: 2px;
 }
 
@@ -34,7 +33,6 @@ input {
   border-radius: 30px;
   background: #6b93c8;
   color: white;
-  opacity: 60%;
 }
 
 .city {
@@ -120,10 +118,8 @@ input {
 .signature {
   text-align: center;
   color: white;
-  opacity: 50%;
   font-size: 15px;
 }
-
 .signature a {
   color: white;
 }
