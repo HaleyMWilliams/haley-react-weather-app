@@ -1,13 +1,129 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.currentWeather {
+  max-width: 500px;
+  border: 3px solid white;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 0 auto;
+  background-image: linear-gradient(to top, #4f86ec 0%, #6991c7 100%);
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 400px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  border: 2px solid white;
+  border-radius: 30px;
+  background: #6b93c8;
+  color: white;
+  opacity: 60%;
+  margin: 2px;
+}
+
+#temp-current {
+  font-size: 40px;
+}
+
+#weather-icon {
+  display: block;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+#current-location {
+  margin: 2px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background: #6b93c8;
+  color: white;
+  opacity: 60%;
+}
+
+.city {
+  font-size: 36px;
+  text-align: center;
+  margin: 20px;
+  color: white;
+}
+#time {
+  font-size: 18px;
+}
+.currentTemp {
+  font-size: 18px;
+}
+
+.weatherDescription {
+  font-size: 18px;
+}
+
+#temp {
+  font-size: 36px;
+}
+
+#space {
+  font-size: 14px;
+}
+
+.weatherTemperature {
+  font-size: 14px;
+  color: white;
+}
+
+.active {
+  cursor: default;
+  font-size: 20px;
+  color: white;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.smaller {
+  font-size: 14px;
+}
+
+.furtherInfo {
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.specs {
+  font-size: 15px;
+  line-height: 18px;
+}
+.deets {
+  font-size: 30px;
+  line-height: 18px;
+}
+.fiveDay {
+  font-size: 16px;
+  text-align: center;
+  max-width: 800px;
+  margin: 10px;
+  color: white;
+}
+.forecastIcon {
+  display: block;
+  text-align: center;
+  width: 85px;
+}
+.temperature {
+  color: white;
+  text-align: center;
+}
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.signature {
+  text-align: center;
+  color: white;
+  opacity: 50%;
+  font-size: 15px;
+}
+
+.signature a {
+  color: white;
 }
