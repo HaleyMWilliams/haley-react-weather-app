@@ -6,7 +6,7 @@ import "./index.css";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
-    <Weather />
+    <Weather defaultCity="New York" />
   </React.StrictMode>,
   rootElement
 );
