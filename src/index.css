@@ -76,11 +76,6 @@ input {
   padding: 5px;
 }
 
-.active:hover {
-  text-decoration: none;
-  color: white;
-}
-
 .smaller {
   font-size: 14px;
 }
@@ -98,6 +93,11 @@ input {
   font-size: 30px;
   line-height: 18px;
 }
+
+.additions {
+  font-size: 23px;
+}
+
 .fiveDay {
   font-size: 16px;
   text-align: center;
@@ -105,10 +105,13 @@ input {
   margin: 10px;
   color: white;
 }
+.forecast {
+  text-align: center;
+}
 .forecastIcon {
   display: block;
-  text-align: center;
-  width: 85px;
+  margin: 0 auto;
+  width: 90px;
 }
 .temperature {
   color: white;

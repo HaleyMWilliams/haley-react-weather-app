@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import FeelsLikeConversion from "./FeelsLikeConversion";
+import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherTemperature(props) {
   const [unit, setUnit] = useState("fahrenheit");
@@ -23,6 +25,21 @@ export default function WeatherTemperature(props) {
         <a href="/" className="unit" onClick={convertToCelsius}>
           °C
         </a>
+        <img src={props.iconUrl} id="weather-icon" alt={props.description} />
+        <p className="weatherDescription" id="weather-description">
+          {props.description}
+        </p>
+        <hr />
+        <FeelsLikeConversion
+          unit="fahrenheit"
+          feelsLike={props.feelsLike}
+          humidity={props.humidity}
+          windSpeed={props.windSpeed}
+          date={props.date}
+        />
+        <hr />
+        <WeatherForecast city={props.city} units="fahrenheit" />
+        <hr />
       </div>
     );
   } else {
@@ -38,6 +55,21 @@ export default function WeatherTemperature(props) {
         <a href="/" className="unit" onClick={convertToFahrenheit}>
           °F
         </a>
+        <img src={props.iconUrl} id="weather-icon" alt={props.description} />
+        <p className="weatherDescription" id="weather-description">
+          {props.description}
+        </p>
+        <hr />
+        <FeelsLikeConversion
+          unit="celsius"
+          feelsLike={props.feelsLike}
+          humidity={props.humidity}
+          windSpeed={props.windSpeed}
+          date={props.date}
+        />
+        <hr />
+        <WeatherForecast city={props.city} units="celsius" />
+        <hr />
       </div>
     );
   }
