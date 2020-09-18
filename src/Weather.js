@@ -57,16 +57,37 @@ export default function Weather(props) {
               onChange={handleChangeCity}
             />
             <input type="submit" value="Search" id="submit-search" />
-            <button id="current-location" onClick={findLocation}>
-              Use Current Location
-            </button>
           </form>
         </div>
         <WeatherInfo data={weatherData} />
+        <p className="signature">
+          Coded by{" "}
+          <a
+            href="https://github.com/HaleyMWilliams/weather-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Haley Williams
+          </a>
+        </p>
       </div>
     );
   } else {
     search();
-    return "Loading...";
+    return (
+      <div>
+        Loading...
+        <p className="signature">
+          Coded by{" "}
+          <a
+            href="https://github.com/HaleyMWilliams/weather-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Haley Williams
+          </a>
+        </p>
+      </div>
+    );
   }
 }

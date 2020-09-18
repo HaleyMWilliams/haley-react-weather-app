@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
   let iconUrl = `https://openweathermap.org/img/wn/${props.data.iconCode}@2x.png`;
@@ -17,26 +18,7 @@ export default function WeatherInfo(props) {
             </p>
 
             <p>
-              <span className="currentTemp">Current Temperature</span>
-              <br />
-              <span id="temp-current">
-                {Math.round(props.data.temperature)}
-              </span>
-              <a
-                href="/"
-                className="weatherTemperature active"
-                id="farenheit-link"
-              >
-                °F
-              </a>
-              <span id="space"> | </span>
-              <a
-                href="/"
-                className="weatherTemperature active"
-                id="celsius-link"
-              >
-                °C
-              </a>
+              <WeatherTemperature fahrenheit={props.data.temperature} />
             </p>
 
             <img src={iconUrl} id="weather-icon" alt={props.data.description} />
@@ -61,16 +43,6 @@ export default function WeatherInfo(props) {
           </div>
         </div>
         <hr />
-        <p className="signature">
-          Coded by{" "}
-          <a
-            href="https://github.com/HaleyMWilliams/weather-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Haley Williams
-          </a>
-        </p>
       </section>
     </div>
   );

@@ -51,14 +51,6 @@ input {
   font-size: 18px;
 }
 
-#farenheit-link {
-  padding: 5px;
-}
-
-#celsius-link {
-  padding: 5px;
-}
-
 .weatherDescription {
   font-size: 18px;
 }
@@ -71,15 +63,17 @@ input {
   font-size: 14px;
 }
 
-.weatherTemperature {
+.unit {
   font-size: 14px;
   color: white;
+  padding: 5px;
 }
 
 .active {
   cursor: default;
   font-size: 20px;
   color: white;
+  padding: 5px;
 }
 
 .active:hover {
